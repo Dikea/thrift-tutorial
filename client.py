@@ -12,8 +12,7 @@ from thrift.protocol import TBinaryProtocol
 from Hello import HelloService
 
 
-
-def enable_client():
+def test_client():
     try:
         transport = TSocket.TSocket('localhost', 9090)
         transport = TTransport.TBufferedTransport(transport)
@@ -31,4 +30,4 @@ def enable_client():
 
 
 if __name__ == '__main__':
-    enable_client()
+    test_client()
